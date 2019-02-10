@@ -30,6 +30,8 @@
     "webpack-dev-server": "2.9.3"
   },
   "dependencies": {
+    "@types/react": "^16.8.2",
+    "@types/react-dom": "^16.8.0",
     "react": "16.8.1",
     "react-dom": "16.8.1"
   }

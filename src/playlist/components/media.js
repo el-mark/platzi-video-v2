@@ -1,17 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-class Media extends React.Component {
+class Media extends Component {
     render() {
+        const styles = {
+            container: {
+                color: '#44546b',
+                cursor: 'poiner',
+                width: 260,
+                border: '1px solid red'
+            }
+        }
         return (
-            <div>
+            <div style={styles.container}>
                 <div>
                     <img 
-                        src="" 
+                        src="./images/covers/bitcoin.jpg"
                         alt=""
                         width={260}
                         height={160}    
                     />
-                    <h3>¿Por que aprender react?</h3>
+                    <h3>¿Por que aprender react? ...</h3>
                     <p>LeonidasEsteban</p>
                 </div>
             </div>
