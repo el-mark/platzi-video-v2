@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './media.css'
 
 class Media extends Component {
     render() {
@@ -11,16 +12,17 @@ class Media extends Component {
             }
         }
         return (
-            <div style={styles.container}>
-                <div>
+            <div className="Media">
+                <div className="Media-cover">
                     <img 
+                        className="Media-image"
                         src="./images/covers/bitcoin.jpg"
                         alt=""
                         width={260}
                         height={160}    
                     />
-                    <h3>¿Por que aprender react? ...</h3>
-                    <p>LeonidasEsteban</p>
+                    <h3 className="Media-title">¿Por que aprender react? ...</h3>
+                    <p className="Media-author">Mark Harmsen</p>
                 </div>
             </div>
         )
