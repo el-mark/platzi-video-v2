@@ -6,4 +6,4 @@ const app = document.getElementById('app');
 
 // const elemento = <div>Como puedo hacer para no estar solo?</div>;
 
-render(<Media />, app);
+render(<Media type="video" title="Que es responsive design?" author="Mark Harmsen Rivera" image="./images/covers/responsive.jpg"/>, app);
