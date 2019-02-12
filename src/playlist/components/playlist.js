@@ -1,6 +1,9 @@
 import React from 'react';
 import Media from './media';
 import './playlist.css';
+import Play from '../../icons/components/play';
+import Pause from '../../icons/components/pause';
+import Volume from '../../icons/components/volume';
 
 function Playlist(props) {
     const playlistD = props.data.categories[0].playlist
@@ -12,6 +15,18 @@ function Playlist(props) {
             <span>Lo mejor de la semana</span>
             <h2>Destacados</h2>
             <div className="Playlist">
+                <Play 
+                    size={100}
+                    color="red"
+                />
+                <Pause 
+                    size={30}
+                    color="blue"
+                />
+                <Volume
+                    size={150}
+                    color="gold"
+                />
                 {
                     playlistD.map((item) => {
                         return <Media {...item} key={item.id}/>
