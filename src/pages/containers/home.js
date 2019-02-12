@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
-import HomeLayout from '../components/home-layout'
+import HomeLayout from '../components/home-layout';
+import Categories from '../../categories/components/categories';
 
 class Home extends Component {
     render() {
+        console.log(this.props.data.categories)
         return (
-            <HomeLayout />
+            <HomeLayout>
+                <Categories categories={this.props.data.categories} />
+            </HomeLayout>
         )
     }
 }
