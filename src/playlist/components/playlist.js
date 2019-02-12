@@ -4,6 +4,7 @@ import './playlist.css';
 import Play from '../../icons/components/play';
 import Pause from '../../icons/components/pause';
 import Volume from '../../icons/components/volume';
+import FullScreen from '../../icons/components/full-screen';
 
 function Playlist(props) {
     const playlistD = props.data.categories[0].playlist
@@ -26,6 +27,10 @@ function Playlist(props) {
                 <Volume
                     size={150}
                     color="gold"
+                />
+                <FullScreen 
+                    size={33}
+                    color="pink"
                 />
                 {
                     playlistD.map((item) => {
