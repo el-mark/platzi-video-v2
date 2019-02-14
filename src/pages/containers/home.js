@@ -9,7 +9,7 @@ import HandleError from '../../error/containers/handle-error';
 
 class Home extends Component {
     state = {
-        modalVisible: true,
+        modalVisible: false,
     }
     handleOpenModal = () => {
         this.setState({
