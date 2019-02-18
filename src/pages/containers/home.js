@@ -5,6 +5,7 @@ import Related from '../components/related';
 import ModalContainer from '../../widgets/conatiners/modal-container';
 import Modal from '../../widgets/components/modal';
 import HandleError from '../../error/containers/handle-error';
+import VideoPLayer from '../../player/containers/video-player'; 
 
 
 class Home extends Component {
@@ -21,6 +22,9 @@ class Home extends Component {
             modalVisible: false,
         })
     }
+                    // <VideoPLayer 
+                        
+                    // />
     render() {
         return (
             <HandleError>
