@@ -1,10 +1,14 @@
 # platzi-video
-Proyecto del curso de React en Platzi
+React project of Platzy academy
 
-Incluye:
+Include:
 - Tips de CSS
 - Tips de EcmaScript7
 - y mucho más
 
-# Profesor
+# Teacher
 @LeonidasEsteban
+
+# Issues and enhancements
+- Add mute icon and functionality 
+- Fix fullscreen variants for all browsers (Check utilities.js file)
