@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import VideoPlayerLayout from '../component/video-player-layout';
-import Video from '../component/video';
-import Title from '../component/title';
-import PlayPause from '../component/play-pause';
-import Timer from '../component/timer';
-import Controls from '../component/video-player-controls';
-import { formatTime } from '../component/utilities';
-import ProgressBar from '../component/progress-bar';
-import Spinner from '../component/spinner';
+import VideoPlayerLayout from '../components/video-player-layout';
+import Video from '../components/video';
+import Title from '../components/title';
+import PlayPause from '../components/play-pause';
+import Timer from '../components/timer';
+import Controls from '../components/video-player-controls';
+import { formatTime } from '../components/utilities';
+import ProgressBar from '../components/progress-bar';
+import Spinner from '../components/spinner';
+import Volume from '../components/volume';
 
 class VideoPlayer extends Component {
     state = {
@@ -76,6 +77,7 @@ class VideoPlayer extends Component {
                         max = {this.state.durationFloat}
                         handleProgressChange={this.handleProgressChange}
                     />
+                    <Volume />
                 </Controls>
                 <Spinner 
                     active={this.state.loading}
