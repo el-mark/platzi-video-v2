@@ -22,14 +22,12 @@ class Home extends Component {
             modalVisible: false,
         })
     }
-                    // <VideoPLayer 
-                        
-                    // />
     render() {
         return (
             <HandleError>
                 <HomeLayout>
                     <Related />
+                    <VideoPLayer />
                     <Categories 
                         categories={this.props.data.categories} 
                         handleOpenModal = {this.handleOpenModal}
