@@ -19,6 +19,8 @@ class VideoPlayer extends Component {
         timeFloat: 0,
         progress: 0,
         loading: false,
+        volume: 0,
+        lastVolume: 0,
     }
     togglePlay = (event) => {
         this.setState({
@@ -60,6 +62,16 @@ class VideoPlayer extends Component {
     handleVolumeChange = event => {
         this.video.volume = event.target.value;
     }
+    handleVolumeToggle = event => {
+        if (this.video.volume===0) {
+            this.video.volume = this.state.lastVolume;
+        } else {
+            this.setState({
+                lastVolume: this.video.volume,
+            })
+            this.video.volume = 0;
+        }
+    }
     render() {
         return (
             <VideoPlayerLayout>
@@ -82,6 +94,7 @@ class VideoPlayer extends Component {
                     />
                     <Volume 
                         handleVolumeChange={this.handleVolumeChange}
+                        handleVolumeToggle={this.handleVolumeToggle}
                     />
                 </Controls>
                 <Spinner 

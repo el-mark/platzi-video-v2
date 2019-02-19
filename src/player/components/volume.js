@@ -7,10 +7,12 @@ function Volume(props) {
         <button
             className="Volume"
         >
-            <VolumeIcon 
-                color="white"
-                size={25}
-            />
+            <div onClick={ props.handleVolumeToggle}>
+                <VolumeIcon 
+                    color="white"
+                    size={25}
+                />
+            </div>
             <div className="Volume-range">
                 <input 
                     type='range'
