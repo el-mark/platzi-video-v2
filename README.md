@@ -1,5 +1,5 @@
 # platzi-video
-React project of Platzy academy
+React project of Platzi academy
 
 Include:
 - Tips de CSS
