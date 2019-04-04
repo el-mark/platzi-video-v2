@@ -3,9 +3,6 @@ import PropTypes from 'prop-types'
 import './media.css'
 
 class Media extends PureComponent {
-    state = {
-        author: 'Mark Harmsen'
-    }
     // constructor(props) {
     //     super(props)
     // //     this.handleClick = this.handleClick.bind(this)
@@ -14,10 +11,7 @@ class Media extends PureComponent {
     //     }
     // }
     handleClick = (event) => {
-        console.log(this.props.author)
-        this.setState({
-            author: 'Ricardo Celis',
-        })
+        console.log('handleClick')
         this.props.openModal(this.props);
     }
     render() {

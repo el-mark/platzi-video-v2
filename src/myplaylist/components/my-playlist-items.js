@@ -11,6 +11,7 @@ function MyPlaylistItems(props) {
                             <MyPlaylistItem
                                 {...item}
                                 key={item.id}
+                                openModal={props.openModal}
                             />
                         )    
                 })

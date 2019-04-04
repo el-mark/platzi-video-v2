@@ -9,6 +9,7 @@ class MyPlaylist extends Component {
             <MyPlaylistLayout>
                 <MyPlaylistItems 
                     myplaylist={this.props.myplaylist}
+                    openModal={this.props.openModal}
                 />
             </MyPlaylistLayout>
         )

@@ -1,8 +1,12 @@
 .MyPlaylistItem{
     padding: 5px 15px;
-    /* cursor: pointer; */
+    cursor: pointer;
     line-height: 18px;
     font-size: 14px;
     display: list-item;
     color: white;
+}
+.MyPlaylistItem:hover{
+    background-color: rgba(0,0,0,.5);
+    border-radius: 5px;
 }

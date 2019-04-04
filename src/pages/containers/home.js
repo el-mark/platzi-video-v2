@@ -29,15 +29,14 @@ class Home extends Component {
             <HandleError>
                 <HomeLayout>
                     <Related>
-                    
                         <MyPlaylist
                             myplaylist={this.props.myplaylist}
-                            
+                            openModal={this.handleOpenModal}
                         />
                     </Related>
                     <Categories 
                         categories={this.props.data.categories} 
-                        handleOpenModal = {this.handleOpenModal}
+                        handleOpenModal={this.handleOpenModal}
                     />
                     {
                         this.state.modalVisible &&
