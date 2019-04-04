@@ -1,11 +1,11 @@
 # Platzi Video
-This is a small project that consist of the main view for a video social network. It is developed with React.js and it's part of a Platzi academy course. You can click the cards to see a video and play with the video tools, like the volume.
+This project is focused on the main view for a video social network. It is developed with React.js and it's part of a Platzi academy course. You can click the cards to see a video and play with the video tools, like the volume.
 
 You can [see demo here](https://el-mark.github.io/platzi-video-v2/).
 
 ![App screenshot](./readme-static/platzi-video-screenshot.png)
 
-## How does it works
+# How does it works
 
 ``` bash
 # Install dependencies
