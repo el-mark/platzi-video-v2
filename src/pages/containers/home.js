@@ -6,6 +6,7 @@ import ModalContainer from '../../widgets/conatiners/modal-container';
 import Modal from '../../widgets/components/modal';
 import HandleError from '../../error/containers/handle-error';
 import VideoPLayer from '../../player/containers/video-player'; 
+import MyPlaylist from '../../myplaylist/containers/my-playlist';
 
 
 class Home extends Component {
@@ -27,7 +28,13 @@ class Home extends Component {
         return (
             <HandleError>
                 <HomeLayout>
-                    <Related />
+                    <Related>
+                    
+                        <MyPlaylist
+                            myplaylist={this.props.myplaylist}
+                            
+                        />
+                    </Related>
                     <Categories 
                         categories={this.props.data.categories} 
                         handleOpenModal = {this.handleOpenModal}
