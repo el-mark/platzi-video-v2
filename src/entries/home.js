@@ -4,6 +4,7 @@ import Home from '../pages/containers/home';
 import data from '../api.json';
 import myplaylist from '../myplaylist.json';
 import { createStore } from 'redux';
+import reducer from '../reducers/data';
 
 const initialSate = {
     data: {
@@ -15,7 +16,7 @@ const initialSate = {
 }
 
 const store = createStore(
-    (state) => state,
+    reducer,
     initialSate,
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 )
