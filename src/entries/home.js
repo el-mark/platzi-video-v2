@@ -5,6 +5,7 @@ import data from '../api.json';
 import myplaylist from '../myplaylist.json';
 import { createStore } from 'redux';
 import reducer from '../reducers/data';
+import { Provider } from 'react-redux';
 
 const initialSate = {
     data: {
@@ -12,7 +13,8 @@ const initialSate = {
     },
     myplaylist : {
         ...myplaylist
-    }
+    },
+    search: []
 }
 
 const store = createStore(
@@ -26,4 +28,10 @@ console.log(store.getState());
 
 const homeContainer = document.getElementById('home-container');
 
-render( <Home data={data} myplaylist={myplaylist} />, homeContainer);
+// render( <Home data={data} myplaylist={myplaylist} />, homeContainer);
+
+render(
+    <Provider store={store}>
+        <Home />
+    </Provider>
+, homeContainer);
